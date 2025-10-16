@@ -5,7 +5,7 @@ public class Usuario {
     private Integer id;
     private String nombres;
     private String contraseña;
-    
+
     private String perfil;
 
     public Usuario() {

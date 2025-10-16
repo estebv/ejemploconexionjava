@@ -15,7 +15,17 @@ public class Conexion {
     private String contraseña="";
 
     public Connection conectar(){
-        return null;
+
+        try{
+            //Intentare generar una conexion hacia BD
+            Connection conexionHaciaBD=DriverManager.getConnection(url,usuario,contraseña);
+            System.out.println("✔️ Exito en la conexion con la base de datos");
+            return conexionHaciaBD;
+        }catch(Exception error){
+            System.out.println("❌ Upps fallamos en la conexion");
+            return null;
+        }
+
     }
 
 
