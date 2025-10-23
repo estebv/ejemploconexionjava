@@ -8,7 +8,7 @@ public class Conexion {
 
     //Atributos de una Conexion
     //url
-    private String url="jdbc:mysql://localhost:3307/usuarios_bd";
+    private String url="jdbc:mysql://localhost:3306/academico";
     //usuario
     private String usuario="root";
     //contraseña
